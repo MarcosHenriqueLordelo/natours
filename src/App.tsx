@@ -15,6 +15,7 @@ const theme: DefaultTheme = {
     darkGreen: "#28b485",
     font: {
       main: "#777777",
+      white: "#ffffff",
     },
   },
 };
