@@ -1,4 +1,5 @@
 import React from "react";
+import { useTheme } from "styled-components";
 
 import {
   Container,
@@ -13,7 +14,11 @@ import {
 // Assets
 import logoW from "../../assets/logo-white.png";
 
+// Components
+import Button from "../myButton";
+
 const Index: React.FC = () => {
+  const theme = useTheme();
   return (
     <Container>
       <LogoBox>
@@ -24,6 +29,13 @@ const Index: React.FC = () => {
           <MainText>Outdoors</MainText>
           <SubText>is where life happens</SubText>
         </LblHeader>
+        <Button
+          label='Discorver our tours'
+          backgroundColor={theme.colors.font.white}
+          textColor={theme.colors.darkGreen}
+          // href='#'
+          animated
+        />
       </CenterContent>
     </Container>
   );

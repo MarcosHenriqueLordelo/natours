@@ -9,10 +9,6 @@ const fadeInLeft = keyframes`
     transform: translate(-100px);
   }
 
-  80% {
-    transform: translate(-10px);
-  }
-
   100% {
     opacity: 1;
     transform: translate(0px);
@@ -23,10 +19,6 @@ const fadeInRight = keyframes`
   0% {
     opacity: 0;
     transform: translate(100px);
-  }
-
-  80% {
-    transform: translate(10px);
   }
 
   100% {
@@ -64,12 +56,14 @@ export const CenterContent = styled.div`
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 `;
 
 export const LblHeader = styled.h1`
   color: ${(props) => props.theme.colors.font.white};
   text-transform: uppercase;
   backface-visibility: hidden;
+  margin-bottom: 16px;
 `;
 
 export const MainText = styled.span`
