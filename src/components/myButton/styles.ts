@@ -9,7 +9,7 @@ type containerProps = {
 const fadeInBottom = keyframes`
   0% {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(10rem);
   }
 
   100% {
@@ -24,22 +24,23 @@ export const Container = styled.a<containerProps>`
   text-decoration: none;
   background-color: ${(props) => props.backgroundColor || "transparent"};
   display: inline-block;
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
   color: ${(props) => props.textColor || "#000000"};
-  border-radius: 100px;
+  border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
   animation: ${(props) => props.animated && fadeInBottom} 1.4s ease-out;
   backface-visibility: hidden;
+  font-size: 1.7rem;
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   }
 
   &:active {
     transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   }
 
   &:after {
@@ -47,7 +48,7 @@ export const Container = styled.a<containerProps>`
     display: inline-block;
     width: 100%;
     height: 100%;
-    border-radius: 100px;
+    border-radius: 10rem;
     position: absolute;
     top: 0;
     left: 0;

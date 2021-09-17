@@ -6,7 +6,7 @@ import heroImg from "../../assets/hero.jpg";
 const fadeInLeft = keyframes`
   0% {
     opacity: 0;
-    transform: translate(-100px);
+    transform: translate(-10rem);
   }
 
   100% {
@@ -18,7 +18,7 @@ const fadeInLeft = keyframes`
 const fadeInRight = keyframes`
   0% {
     opacity: 0;
-    transform: translate(100px);
+    transform: translate(10rem);
   }
 
   100% {
@@ -43,12 +43,12 @@ export const Container = styled.header`
 
 export const LogoBox = styled.div`
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: 4rem;
 `;
 
 export const Logo = styled.img`
-  height: 45px;
+  height: 4.5rem;
 `;
 
 export const CenterContent = styled.div`
@@ -63,13 +63,13 @@ export const LblHeader = styled.h1`
   color: ${(props) => props.theme.colors.font.white};
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 16px;
+  margin-bottom: 4rem;
 `;
 
 export const MainText = styled.span`
   font-size: 60px;
   font-weight: 400;
-  letter-spacing: 45px;
+  letter-spacing: 4.5rem;
   display: block;
   animation: 1s ${fadeInLeft} ease-out;
 `;
@@ -77,7 +77,7 @@ export const MainText = styled.span`
 export const SubText = styled.span`
   font-size: 20px;
   font-weight: 700;
-  letter-spacing: 19.5px;
+  letter-spacing: 1.9rem;
   display: block;
   animation: 1s ${fadeInRight} ease-in;
 `;

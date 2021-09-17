@@ -2,9 +2,12 @@ import { withStyles } from "@material-ui/core/styles";
 
 const GlobalCss = withStyles({
   "@global": {
+    html: {
+      fontSize: "62.5%",
+    },
     "*": {
       margin: 0,
-      padding: 8,
+      padding: "0.2em",
       boxSizing: "border-box",
       scrollbarWidth: "thin",
       "&::-webkit-scrollbar": {
