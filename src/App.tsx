@@ -5,7 +5,10 @@ import styled, { ThemeProvider, DefaultTheme } from "styled-components";
 import GlobalCss from "./utils/globalCss";
 
 // Components
-import Header from "./components/header";
+
+// Sections
+import Header from "./sections/header";
+import About from "./sections/about";
 
 const theme: DefaultTheme = {
   title: "default",
@@ -16,6 +19,16 @@ const theme: DefaultTheme = {
     font: {
       main: "#777777",
       white: "#ffffff",
+    },
+    background: {
+      about: "#f7f7f7",
+    },
+  },
+  fonts: {
+    sizes: {
+      small: "1.2rem",
+      medium: "1.8rem",
+      larger: "2.1rem",
     },
   },
 };
@@ -32,6 +45,7 @@ const App: React.FC = () => {
       <GlobalCss />
       <Container>
         <Header />
+        <About />
       </Container>
     </ThemeProvider>
   );
