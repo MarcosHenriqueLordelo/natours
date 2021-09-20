@@ -15,7 +15,7 @@ import {
 import logoW from "../../assets/logo-white.png";
 
 // Components
-import Button from "../myButton";
+import Button from "../../components/myButton";
 
 const Index: React.FC = () => {
   const theme = useTheme();

@@ -39,6 +39,7 @@ export const Container = styled.header`
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
+  z-index: 1;
 `;
 
 export const LogoBox = styled.div`
