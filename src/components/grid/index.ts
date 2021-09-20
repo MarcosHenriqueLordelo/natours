@@ -4,7 +4,7 @@ type RowProps = {
   backgroundColor?: string;
 };
 
-const spacing = "2rem";
+const spacing = "4rem";
 
 export const Row = styled.div<RowProps>`
   max-width: 100%;
