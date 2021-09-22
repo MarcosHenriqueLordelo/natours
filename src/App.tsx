@@ -9,6 +9,7 @@ import GlobalCss from "./utils/globalCss";
 // Sections
 import Header from "./sections/header";
 import About from "./sections/about";
+import Features from "./sections/features";
 
 const theme: DefaultTheme = {
   title: "default",
@@ -46,6 +47,7 @@ const App: React.FC = () => {
       <Container>
         <Header />
         <About />
+        <Features />
       </Container>
     </ThemeProvider>
   );

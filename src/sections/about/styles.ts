@@ -3,10 +3,9 @@ import styled from "styled-components";
 export const Container = styled.section`
   background-color: ${(props) => props.theme.colors.background.about};
   padding: 25rem 19rem 0 19rem;
-  //padding-bottom: 10rem;
   margin-top: -20rem;
   backface-visibility: hidden;
-  height: 100vh;
+  height: 120vh;
 `;
 
 export const HeaderContainer = styled.div`
