@@ -110,7 +110,7 @@ export const Image = styled.div<ImageProps>`
 
 export const Header = styled.h4`
   text-transform: uppercase;
-  font-size: 2.8rem;
+  font-size: ${(props) => props.theme.fonts.sizes.larger};
   font-weight: 300;
   color: ${(props) => props.theme.colors.font.white};
   text-align: right;
@@ -157,7 +157,7 @@ export const Content = styled.ul`
 `;
 
 export const ContentItem = styled.li`
-  font-size: 1.7rem;
+  font-size: ${(props) => props.theme.fonts.sizes.medium};
   text-align: center;
   padding: 1rem 0 1rem 0;
   color: ${(props) => props.theme.colors.font.main};
@@ -185,7 +185,7 @@ export const PriceBox = styled.div`
     font-weight: 100;
   }
   .label {
-    font-size: 1.4rem;
+    font-size: ${(props) => props.theme.fonts.sizes.small};
     text-transform: uppercase;
   }
 `;

@@ -31,7 +31,7 @@ export const Container = styled.a<containerProps>`
   position: relative;
   animation: ${(props) => props.animated && fadeInBottom} 1.4s ease-out;
   backface-visibility: hidden;
-  font-size: 1.7rem;
+  font-size: ${(props) => props.theme.fonts.sizes.medium}
 
   &:hover {
     transform: translateY(-3px);

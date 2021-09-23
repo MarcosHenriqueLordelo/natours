@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background-color: rgba(225, 225, 225, 0.8);
-  font-size: 1.5rem;
+  font-size: ${(props) => props.theme.fonts.sizes.medium};
   padding: 2.5rem;
   text-align: center;
   border-radius: 0.3rem;

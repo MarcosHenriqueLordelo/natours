@@ -68,7 +68,7 @@ export const LblHeader = styled.h1`
 `;
 
 export const MainText = styled.span`
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 400;
   letter-spacing: 4.5rem;
   display: block;
@@ -76,7 +76,7 @@ export const MainText = styled.span`
 `;
 
 export const SubText = styled.span`
-  font-size: 20px;
+  font-size: ${(props) => props.theme.fonts.sizes.larger}
   font-weight: 700;
   letter-spacing: 1.9rem;
   display: block;
