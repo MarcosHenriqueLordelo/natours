@@ -10,14 +10,22 @@ import GlobalCss from "./utils/globalCss";
 import Header from "./sections/header";
 import About from "./sections/about";
 import Features from "./sections/features";
+import Tours from "./sections/tours";
 
 const theme: DefaultTheme = {
   title: "default",
   colors: {
-    lightGreen: "#7ed56f",
-    mediumGreen: "#55c57a",
-    darkGreen: "#28b485",
+    main: {
+      lightGreen: "#7ed56f",
+      mediumGreen: "#55c57a",
+      darkGreen: "#28b485",
+      lightOrange: "#ffb900",
+      darkOrange: "#ff7730",
+      lightBlue: "#2998ff",
+      darkBlue: "#5643fa",
+    },
     font: {
+      light: "#eeeeee",
       main: "#777777",
       white: "#ffffff",
     },
@@ -48,6 +56,7 @@ const App: React.FC = () => {
         <Header />
         <About />
         <Features />
+        <Tours />
       </Container>
     </ThemeProvider>
   );

@@ -8,8 +8,8 @@ export const Container = styled.section`
   padding: 17rem;
   background-image: linear-gradient(
       to right bottom,
-      ${(props) => `${props.theme.colors.lightGreen}d5`},
-      ${(props) => `${props.theme.colors.darkGreen}d5`}
+      ${(props) => `${props.theme.colors.main.lightGreen}d5`},
+      ${(props) => `${props.theme.colors.main.darkGreen}d5`}
     ),
     url(${nat4});
   background-size: cover;

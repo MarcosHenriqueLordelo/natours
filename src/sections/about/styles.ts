@@ -30,17 +30,17 @@ export const Paragraph = styled.p`
 `;
 
 export const LearnMore = styled.a`
-  color: ${(props) => props.theme.colors.lightGreen};
+  color: ${(props) => props.theme.colors.main.lightGreen};
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 0.2rem solid ${(props) => props.theme.colors.mediumGreen};
+  border-bottom: 0.2rem solid ${(props) => props.theme.colors.main.mediumGreen};
   padding: 0.6rem;
   font-size: ${(props) => props.theme.fonts.sizes.medium};
   backface-visibility: hidden;
 
   &:hover {
-    background-color: ${(props) => props.theme.colors.mediumGreen};
+    background-color: ${(props) => props.theme.colors.main.mediumGreen};
     color: ${(props) => props.theme.colors.font.white};
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
@@ -63,6 +63,7 @@ export const ImagesContainer = styled.div`
     position: absolute;
     z-index: 0;
     transition: all 0.2s;
+    padding: 0;
 
     &.p1 {
       left: 0;

@@ -6,8 +6,8 @@ export default styled.h2`
   font-weight: 700;
   background-image: linear-gradient(
     to right,
-    ${(props) => props.theme.colors.lightGreen},
-    ${(props) => props.theme.colors.darkGreen}
+    ${(props) => props.theme.colors.main.lightGreen},
+    ${(props) => props.theme.colors.main.darkGreen}
   );
   display: inline-block;
   background-clip: text;

@@ -31,8 +31,8 @@ export const Container = styled.header`
   height: 95vh;
   background-image: linear-gradient(
       to right bottom,
-      ${(props) => `${props.theme.colors.lightGreen}d5`},
-      ${(props) => `${props.theme.colors.darkGreen}d5`}
+      ${(props) => `${props.theme.colors.main.lightGreen}d5`},
+      ${(props) => `${props.theme.colors.main.darkGreen}d5`}
     ),
     url(${heroImg});
   background-size: cover;

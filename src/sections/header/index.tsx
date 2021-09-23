@@ -32,7 +32,7 @@ const Index: React.FC = () => {
         <Button
           label='Discorver our tours'
           backgroundColor={theme.colors.font.white}
-          textColor={theme.colors.darkGreen}
+          textColor={theme.colors.main.darkGreen}
           // href='#'
           animated
         />
