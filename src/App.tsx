@@ -11,6 +11,7 @@ import Header from "./sections/header";
 import About from "./sections/about";
 import Features from "./sections/features";
 import Tours from "./sections/tours";
+import Comments from "./sections/comments";
 
 const theme: DefaultTheme = {
   title: "default",
@@ -57,6 +58,7 @@ const App: React.FC = () => {
         <About />
         <Features />
         <Tours />
+        <Comments />
       </Container>
     </ThemeProvider>
   );
