@@ -15,6 +15,7 @@ declare module "styled-components" {
         darkBlue: string;
       };
       font: {
+        placeholder: string;
         light: string;
         main: string;
         white: string;
