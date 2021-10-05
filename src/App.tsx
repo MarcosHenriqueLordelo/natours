@@ -12,6 +12,7 @@ import About from "./sections/about";
 import Features from "./sections/features";
 import Tours from "./sections/tours";
 import Comments from "./sections/comments";
+import Booking from "./sections/booking";
 
 const theme: DefaultTheme = {
   title: "default",
@@ -26,6 +27,7 @@ const theme: DefaultTheme = {
       darkBlue: "#5643fa",
     },
     font: {
+      placeholder: "#999999",
       light: "#eeeeee",
       main: "#777777",
       white: "#ffffff",
@@ -59,6 +61,7 @@ const App: React.FC = () => {
         <Features />
         <Tours />
         <Comments />
+        <Booking />
       </Container>
     </ThemeProvider>
   );
