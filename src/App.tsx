@@ -13,6 +13,7 @@ import Features from "./sections/features";
 import Tours from "./sections/tours";
 import Comments from "./sections/comments";
 import Booking from "./sections/booking";
+import Footer from "./sections/footer";
 
 const theme: DefaultTheme = {
   title: "default",
@@ -34,6 +35,7 @@ const theme: DefaultTheme = {
     },
     background: {
       about: "#f7f7f7",
+      footer: "#333333",
     },
   },
   fonts: {
@@ -45,7 +47,7 @@ const theme: DefaultTheme = {
   },
 };
 
-const Container = styled.div`
+const Container = styled.main`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -55,14 +57,15 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalCss />
+      <Header />
       <Container>
-        <Header />
         <About />
         <Features />
         <Tours />
         <Comments />
         <Booking />
       </Container>
+      <Footer />
     </ThemeProvider>
   );
 };
