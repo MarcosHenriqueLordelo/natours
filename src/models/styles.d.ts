@@ -22,6 +22,7 @@ declare module "styled-components" {
       };
       background: {
         about: string;
+        footer: string;
       };
     };
 
