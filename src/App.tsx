@@ -5,6 +5,7 @@ import styled, { ThemeProvider, DefaultTheme } from "styled-components";
 import GlobalCss from "./utils/globalCss";
 
 // Components
+import Navigation from "./components/navigation";
 
 // Sections
 import Header from "./sections/header";
@@ -57,6 +58,7 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalCss />
+      <Navigation />
       <Header />
       <Container>
         <About />
