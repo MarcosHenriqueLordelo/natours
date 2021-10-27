@@ -14,7 +14,11 @@ import nat5 from "../../assets/nat-5.jpg";
 import nat6 from "../../assets/nat-6.jpg";
 import nat7 from "../../assets/nat-7.jpg";
 
-const Index: React.FC = () => {
+interface PropTypes {
+  onCardClick?: () => void;
+}
+
+const Index: React.FC<PropTypes> = ({ onCardClick }) => {
   const theme = useTheme();
 
   const contents = {
@@ -54,6 +58,7 @@ const Index: React.FC = () => {
             header='the sea explorer'
             content={contents.firstCard}
             price={99.9}
+            onClick={onCardClick}
           />
         </div>
         <div className='col _1of3'>
@@ -63,6 +68,7 @@ const Index: React.FC = () => {
             header='the forest hiker'
             content={contents.secondCard}
             price={100.0}
+            onClick={onCardClick}
           />
         </div>
         <div className='col _1of3'>
@@ -72,6 +78,7 @@ const Index: React.FC = () => {
             header='the snow adventurer'
             content={contents.thirdyCard}
             price={200.45}
+            onClick={onCardClick}
           />
         </div>
       </Row>

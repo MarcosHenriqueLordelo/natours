@@ -20,6 +20,7 @@ interface PropTypes {
   header: string;
   content: string[];
   price: number;
+  onClick?: () => void;
 }
 
 const Index: React.FC<PropTypes> = ({
@@ -28,6 +29,7 @@ const Index: React.FC<PropTypes> = ({
   header,
   content,
   price,
+  onClick,
 }) => {
   const theme = useTheme();
 
@@ -65,6 +67,7 @@ const Index: React.FC<PropTypes> = ({
             label='Book Now'
             backgroundColor={theme.colors.font.white}
             textColor={getColor(color)}
+            onClick={onClick}
           />
         </BackContent>
       </CardSide>

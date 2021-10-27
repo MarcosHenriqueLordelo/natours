@@ -25,6 +25,7 @@ const Index: React.FC<props> = ({
       backgroundColor={backgroundColor}
       textColor={textColor}
       animated={animated}
+      onClick={onClick}
     >
       {label}
     </Container>

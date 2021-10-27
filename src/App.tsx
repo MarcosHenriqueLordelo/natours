@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled, { ThemeProvider, DefaultTheme } from "styled-components";
 
 // Utils
@@ -6,6 +6,7 @@ import GlobalCss from "./utils/globalCss";
 
 // Components
 import Navigation from "./components/navigation";
+import Modal from "./components/modal";
 
 // Sections
 import Header from "./sections/header";
@@ -55,6 +56,12 @@ const Container = styled.main`
 `;
 
 const App: React.FC = () => {
+  const [modal, setModal] = useState(false);
+
+  useEffect(() => {
+    console.log(modal);
+  }, [modal]);
+
   return (
     <ThemeProvider theme={theme}>
       <GlobalCss />
@@ -63,11 +70,12 @@ const App: React.FC = () => {
       <Container>
         <About />
         <Features />
-        <Tours />
+        <Tours onCardClick={() => setModal(true)} />
         <Comments />
         <Booking />
       </Container>
       <Footer />
+      <Modal open={modal} onClose={() => setModal(false)} />
     </ThemeProvider>
   );
 };
