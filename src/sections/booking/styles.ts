@@ -10,6 +10,14 @@ export const Container = styled.section`
     ${(props) => props.theme.colors.main.lightGreen},
     ${(props) => props.theme.colors.main.darkGreen}
   );
+
+  @media (max-width: 900px) {
+    padding: 15rem 0;
+  }
+
+  @media (max-width: 600px) {
+    padding: 10rem 6rem;
+  }
 `;
 
 export const Content = styled.div`
@@ -24,10 +32,20 @@ export const Content = styled.div`
   background-size: cover;
   border-radius: 0.3rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+
+  @media (max-width: 600px) {
+    background-image: linear-gradient(
+        105deg,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.9) 80%,
+        transparent 80%
+      ),
+      url(${nat10});
+  }
 `;
 
 export const FormContainer = styled.div`
-  width: 50%;
+  width: 90%;
   padding: 6rem;
 `;
 

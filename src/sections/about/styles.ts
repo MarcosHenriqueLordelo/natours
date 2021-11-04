@@ -6,6 +6,16 @@ export const Container = styled.section`
   margin-top: -20rem;
   backface-visibility: hidden;
   height: 120vh;
+
+  @media (max-width: 900px) {
+    margin-top: -29rem;
+    padding: 35rem 3rem 7rem 3rem;
+  }
+
+  @media (max-width: 600px) {
+    margin-top: -29rem;
+    padding: 35rem 3rem 10rem 3rem;
+  }
 `;
 
 export const HeaderContainer = styled.div`
@@ -49,6 +59,10 @@ export const LearnMore = styled.a`
   &:active {
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+
+  @media (max-width: 900px) {
+    margin-bottom: 10rem;
   }
 `;
 

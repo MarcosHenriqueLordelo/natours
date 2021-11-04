@@ -19,4 +19,14 @@ export const Container = styled.section`
   & > * {
     transform: skewY(7deg);
   }
+
+  @media (max-width: 900px) {
+    margin-top: -10vh;
+    padding: 10rem 30rem;
+  }
+
+  @media (max-width: 600px) {
+    margin-top: -10vh;
+    padding: 10rem 17rem;
+  }
 `;

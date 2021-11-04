@@ -5,6 +5,14 @@ export const Container = styled.section`
   padding: 25rem 20rem 6rem 20rem;
   margin-top: -18rem;
   backface-visibility: hidden;
+
+  @media (max-width: 900px) {
+    padding: 30rem 30rem 6rem 30rem;
+  }
+
+  @media (max-width: 600px) {
+    padding: 30rem 15rem 6rem 15rem;
+  }
 `;
 
 export const HeaderContainer = styled.div`

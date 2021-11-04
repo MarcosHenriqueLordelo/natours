@@ -10,6 +10,7 @@ export default styled.h2`
     ${(props) => props.theme.colors.main.darkGreen}
   );
   display: inline-block;
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   letter-spacing: 0.2rem;
@@ -18,5 +19,13 @@ export default styled.h2`
   &:hover {
     transform: scale(1.02);
     text-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
+  }
+
+  @media (max-width: 900px) {
+    font-size: 3.8rem;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 3rem;
   }
 `;

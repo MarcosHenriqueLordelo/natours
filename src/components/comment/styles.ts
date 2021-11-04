@@ -26,6 +26,14 @@ export const Container = styled.div`
       filter: blur(0.3rem) brightness(80%);
     }
   }
+
+  @media (max-width: 600px) {
+    transform: skewX(0deg);
+
+    & > * {
+      transform: skewX(0deg);
+    }
+  }
 `;
 
 export const Shape = styled.figure`
@@ -37,6 +45,11 @@ export const Shape = styled.figure`
   clip-path: circle(50% at center);
   transform: translateX(-3rem) skewX(12deg);
   position: relative;
+
+  @media (max-width: 600px) {
+    transform: skewX(0deg) translate(1rem, -2rem);
+    margin-bottom: 2rem;
+  }
 `;
 
 export const Image = styled.img`
@@ -59,6 +72,10 @@ export const Caption = styled.figcaption`
 
 export const Content = styled.div`
   color: ${(props) => props.theme.colors.font.main};
+
+  @media (max-width: 600px) {
+    display: inline-block;
+  }
 `;
 
 export const Header = styled.h3`

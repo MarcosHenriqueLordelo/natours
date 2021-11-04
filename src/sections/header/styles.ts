@@ -73,12 +73,23 @@ export const MainText = styled.span`
   letter-spacing: 4.5rem;
   display: block;
   animation: 1s ${fadeInLeft} ease-out;
+
+  @media (max-width: 600px) {
+    letter-spacing: 1rem;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
 `;
 
 export const SubText = styled.span`
-  font-size: ${(props) => props.theme.fonts.sizes.larger}
+  font-size: ${(props) => props.theme.fonts.sizes.larger};
   font-weight: 700;
   letter-spacing: 1.9rem;
   display: block;
   animation: 1s ${fadeInRight} ease-in;
+
+  @media (max-width: 600px) {
+    letter-spacing: 0.5rem;
+    margin-bottom: 10rem;
+  }
 `;
